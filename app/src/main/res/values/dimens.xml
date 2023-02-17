@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_width">305dp</dimen>
+    <dimen name="card_height">161dp</dimen>
+    <dimen name="photo_width">91dp</dimen>
+    <dimen name="photo_height">91dp</dimen>
+    <dimen name="profile_card_text_width">151dp</dimen>
+    <dimen name="profile_card_text_height">19dp</dimen>
+    <dimen name="profile_card_corner_radius">15dp</dimen>
+    <dimen name="profile_card_top_margin">25dp</dimen>
+    <dimen name="card_photo_margin_start">16dp</dimen>
+
+    <dimen name="profile_card_common_text_size">14sp</dimen>
+</resources>

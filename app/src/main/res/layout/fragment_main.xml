@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/profile_header"
+        android:layout_width="164dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/profile_setting_header"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/profile_card"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/profile_card"
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/profile_card_top_margin"
+        app:cardBackgroundColor="#F9F9F9"
+        app:rippleColor="#EDEDED"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="@dimen/profile_card_corner_radius"
+        app:strokeWidth="2dp"
+        app:strokeColor="#EDEDED"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/card_profile_photo"
+                android:layout_width="@dimen/photo_width"
+                android:layout_height="@dimen/photo_height"
+                android:layout_marginStart="@dimen/card_photo_margin_start"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars"
+                android:src="@drawable/ic_profile_default"
+                android:scaleType="centerCrop"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/card_profile_fullName"
+                android:layout_width="@dimen/profile_card_text_width"
+                android:layout_height="@dimen/profile_card_text_height"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="27dp"
+                android:textColor="@color/black"
+                android:text="Иванов Иван"
+                android:textSize="@dimen/profile_card_common_text_size"
+                app:layout_constraintStart_toEndOf="@+id/card_profile_photo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/card_profile_patronymic"
+                android:layout_width="@dimen/profile_card_text_width"
+                android:layout_height="@dimen/profile_card_text_height"
+                android:text="Иванович"
+                android:textSize="@dimen/profile_card_common_text_size"
+                android:textColor="@color/black"
+                android:layout_marginStart="27dp"
+                app:layout_constraintStart_toEndOf="@+id/card_profile_photo"
+                app:layout_constraintTop_toBottomOf="@+id/card_profile_fullName" />
+
+            <TextView
+                android:id="@+id/card_profile_phone_number"
+                android:layout_width="@dimen/profile_card_text_width"
+                android:layout_height="@dimen/profile_card_text_height"
+                android:textSize="@dimen/profile_card_common_text_size"
+                android:text="+7 (912) 212-86-70"
+                android:textColor="@color/black"
+                android:layout_marginStart="27dp"
+                app:layout_constraintStart_toEndOf="@+id/card_profile_photo"
+                app:layout_constraintTop_toBottomOf="@+id/card_profile_patronymic" />
+
+            <TextView
+                android:id="@+id/card_profile_email"
+                android:layout_width="@dimen/profile_card_text_width"
+                android:layout_height="@dimen/profile_card_text_height"
+                android:layout_marginStart="27dp"
+                android:textSize="@dimen/profile_card_common_text_size"
+                android:text="ivanov_ivan@mail.ru"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/card_profile_photo"
+                app:layout_constraintTop_toBottomOf="@+id/card_profile_phone_number" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button2"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:foreground="@drawable/pen"
+                app:backgroundTint="#FFFFFFFF"
+                app:icon="@drawable/pen"
+                app:iconTint="#00FFFFFF"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:rippleColor="#00FFFFFF" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="281dp"
+        android:layout_height="56dp"
+        android:text="@string/profile_exit_button"
+        android:backgroundTint="#A2DBFB"
+        android:layout_marginBottom="48dp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
