@@ -117,7 +117,7 @@
         android:layout_width="281dp"
         android:layout_height="56dp"
         android:text="@string/profile_exit_button"
-        android:backgroundTint="#A2DBFB"
+        android:backgroundTint="@color/common_button_color"
         android:layout_marginBottom="48dp"
         app:cornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"

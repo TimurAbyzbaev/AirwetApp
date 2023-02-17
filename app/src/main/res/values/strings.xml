@@ -5,9 +5,26 @@
     <string name="profile_header">Личный кабинет</string>
     <string name="profile_setting_header">Настройки</string>
     <string name="profile_exit_button">Выйти</string>
+
     <string name="sign_in_button">Войти</string>
     <string name="sign_up_button">Зарегистрироваться</string>
     <string name="welcome_label_header">Добро пожаловать</string>
     <string name="welcome_label_body">в приложение для управления вашей системой</string>
+
+    <string name="application_for_registration">Заявка \n на регистрацию</string>
+    <string name="phone_or_email">E-mail или телефон</string>
+    <string name="contract_number">№ договора</string>
+    <string name="send">Отправить</string>
+
+    <string name="set_up_password_header">Установка пароля</string>
+    <string name="input_password">Введите пароль</string>
+    <string name="repeat_password">Повторите пароль</string>
+    <string name="save">Сохранить</string>
+
+    <string name="sign_in_header">Войти \n в учетную запись</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="sign_in">Войти</string>
+    <string name="Password">Пароль</string>
+    <string name="back">Back</string>
 
 </resources>

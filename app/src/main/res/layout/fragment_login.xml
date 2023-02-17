@@ -41,15 +41,15 @@
         android:id="@+id/materialTextView"
         android:layout_width="312dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="210dp"
         android:gravity="center_horizontal"
         android:text="@string/welcome_label_header"
-        android:layout_marginBottom="210dp"
         android:textColor="#0F9DEE"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/view2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view2" />
 
     <TextView
         android:id="@+id/textView"
@@ -70,7 +70,7 @@
         android:layout_width="255dp"
         android:layout_height="58dp"
         android:layout_marginBottom="30dp"
-        android:backgroundTint="#A2DBFB"
+        android:backgroundTint="@color/common_button_color"
         android:text="@string/sign_in_button"
 
         app:cornerRadius="30dp"
@@ -83,7 +83,7 @@
         android:layout_width="255dp"
         android:layout_height="58dp"
         android:layout_marginBottom="8dp"
-        android:backgroundTint="#A2DBFB"
+        android:backgroundTint="@color/common_button_color"
         android:text="@string/sign_up_button"
         app:cornerRadius="30dp"
         app:layout_constraintBottom_toTopOf="@+id/button_sign_in"
